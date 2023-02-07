@@ -38,5 +38,10 @@ Route::group(['namespace'=> 'App\Http\Controllers'],function(){
          * Logout routes
          */
         Route::get('/logout','LogoutController@perform')->name('logout.perform');
+
+        /**
+         * Creating template route
+         */
+        Route::get('/create_event_template','TemplateController@show')->name('create.event.template.show');
     });
 });

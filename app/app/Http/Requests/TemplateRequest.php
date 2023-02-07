@@ -25,6 +25,9 @@ class TemplateRequest extends FormRequest
     {
         return [
             //
+            'name'=>'required|string|max:255',
+            'password'=>'nullable|string|max:255',
+            'type'=>'required|string|in:Q&A,Poll,Quiz'
         ];
     }
 }
